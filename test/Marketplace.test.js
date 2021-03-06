@@ -30,7 +30,7 @@ contract('Marketplace', ([deployer, seller, buyer]) => {
     let result, productCount
 
     before(async () => {
-      result = await marketplace.createProduct('iPhone X', web3.utils.toWei('1', 'Ether'), { from: seller })
+      result = await marketplace.createProduct('iPhone X','', web3.utils.toWei('1', 'Ether'), { from: seller })
       productCount = await marketplace.productCount()
     })
 
@@ -45,9 +45,9 @@ contract('Marketplace', ([deployer, seller, buyer]) => {
       assert.equal(event.purchased, false, 'purchased is correct')
 
       // FAILURE: Product must have a name
-      await await marketplace.createProduct('', web3.utils.toWei('1', 'Ether'), { from: seller }).should.be.rejected;
+      await await marketplace.createProduct('','', web3.utils.toWei('1', 'Ether'), { from: seller }).should.be.rejected;
       // FAILURE: Product must have a price
-      await await marketplace.createProduct('iPhone X', 0, { from: seller }).should.be.rejected;
+      await await marketplace.createProduct('iPhone X','', 0, { from: seller }).should.be.rejected;
     })
 
     it('lists products', async () => {
