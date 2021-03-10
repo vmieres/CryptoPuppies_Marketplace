@@ -1,4 +1,7 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
+
+import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
+import '@openzeppelin/contracts/access/Ownable.sol';
 
 contract Marketplace {
     string public name;
@@ -36,7 +39,7 @@ contract Marketplace {
         name = "Dapp University Marketplace";
     }
 
-    function createProduct(string memory _name, string memory _image, uint _price) public {
+    function createProduct(string memory _name, string memory _image, uint _price) public returns (uint){
         // Require a valid name
         require(bytes(_name).length > 0);
         // Require a valid price
@@ -47,9 +50,11 @@ contract Marketplace {
         products[productCount] = Product(productCount, _name, _image, _price,  msg.sender, false);
         // Trigger an event
         emit ProductCreated(productCount, _name, _image,_price,  msg.sender, false);
+
+        return productCount;
     }
 
-    function purchaseProduct(uint _id) public payable {
+    function purchaseProduct(uint _id) public payable returns (uint){
         // Fetch the product
         Product memory _product = products[_id];
         // Fetch the owner
@@ -69,8 +74,10 @@ contract Marketplace {
         // Update the product
         products[_id] = _product;
         // Pay the seller by sending them Ether
-        address(_seller).transfer(msg.value);
+        _seller.transfer(msg.value);
         // Trigger an event
         emit ProductPurchased(productCount, _product.name, _product.image,_product.price, msg.sender, true);
+
+        return productCount;
     }
 }
