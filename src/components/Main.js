@@ -56,28 +56,31 @@ class Main extends Component {
             </tr>
           </thead>
           <tbody id="productList">
-            { this.props.products.map((product, key) => {
-              return(
+            {this.props.products.map((product, key) => {
+              const image = product.image;
+              return (
                 <tr key={key}>
                   <th scope="row">{product.id.toString()}</th>
                   <td>{product.name}</td>
-                  <td>{product.image}</td>
+                  <td>
+                  <div><img id="dapp-image" src={`https://gateway.pinata.cloud/ipfs/${image}`} alt="" border="3" height="200" width="200"/></div>
+                  </td>
                   <td>{window.web3.utils.fromWei(product.price.toString(), 'Ether')} Eth</td>
                   <td>{product.owner}</td>
                   <td>
-                    { !product.purchased
+                    {!product.purchased
                       ? <button
-                          name={product.id}
-                          value={product.price}
-                          onClick={(event) => {
-                            this.props.purchaseProduct(event.target.name, event.target.value)
-                          }}
-                        >
-                          Buy
+                        name={product.id}
+                        value={product.price}
+                        onClick={(event) => {
+                          this.props.purchaseProduct(event.target.name, event.target.value)
+                        }}
+                      >
+                        Buy
                         </button>
                       : null
                     }
-                    </td>
+                  </td>
                 </tr>
               )
             })}
