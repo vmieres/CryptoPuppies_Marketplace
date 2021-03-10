@@ -1,10 +1,9 @@
 pragma solidity ^0.6.0;
 
 import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
-import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Marketplace {
-    string public name;
+contract Marketplace is ERC721 {
+    
     uint public productCount = 0;
     mapping(uint => Product) public products;
 
@@ -35,8 +34,7 @@ contract Marketplace {
         bool purchased
     );
 
-    constructor() public {
-        name = "Dapp University Marketplace";
+    constructor () public ERC721("ArtToken", "ART") {        
     }
 
     function createProduct(string memory _name, string memory _image, uint _price) public returns (uint){
