@@ -41,11 +41,12 @@ Now we need to install the [Truffle Framework](https://www.trufflesuite.com/truf
 ![](images/truffle.png)
 
 The Truffle Framework provides all the following functionalities: 
+
 /*:
-Smart Contract Management
-Automated Testing
-Deployment & Migrations
-Network Management
+* Smart Contract Management
+* Automated Testing
+* Deployment & Migrations
+* Network Management
 */
  
 ### **MetaMask** 
