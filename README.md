@@ -65,7 +65,7 @@ This is a marketplace that runs on the blockchain. It allows individuals to list
 
 ### **Ropsten Ethereum**
 
-One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. 
+One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. Using Ropsten to deploy our application allows for greater interactability among users. 
 
 ### **Sources**
 * [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
