@@ -66,16 +66,18 @@ class App extends Component {
   createProduct(name, image, price) {
     this.setState({ loading: true })
     this.state.marketplace.methods.createProduct(name, image, price).send({ from: this.state.account })
-    .on('receipt', (receipt) => {
+    .once('transactionHash', (transactionHash) => {
       this.setState({ loading: false })
+      window.location.reload();
     })
   }
 
   purchaseProduct(id, price) {
     this.setState({ loading: true })
     this.state.marketplace.methods.purchaseProduct(id).send({ from: this.state.account, value: price })
-    .on('receipt', (receipt) => {
+    .once('transactionHash', (transactionHash) => {
       this.setState({ loading: false })
+      window.location.reload();
     })
   }
 

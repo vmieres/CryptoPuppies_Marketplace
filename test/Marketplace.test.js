@@ -18,12 +18,7 @@ contract('Marketplace', ([deployer, seller, buyer]) => {
       assert.notEqual(address, '')
       assert.notEqual(address, null)
       assert.notEqual(address, undefined)
-    })
-
-    it('has a name', async () => {
-      const name = await marketplace.name()
-      assert.equal(name, 'Dapp University Marketplace')
-    })
+    })    
   })
 
   describe('products', async () => {
