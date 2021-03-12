@@ -44,6 +44,8 @@ Now we need to install the [Truffle Framework](https://www.trufflesuite.com/truf
 
 [MetaMask](https://metamask.io) is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node. 
 
+![] (images/metamask-1.png)
+
 
 
 
