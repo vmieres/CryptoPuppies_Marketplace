@@ -1,8 +1,9 @@
 pragma solidity ^0.6.0;
 
 import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
+import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Marketplace is ERC721 {
+contract Marketplace is ERC721 , Ownable{
     
     uint public productCount = 0;
     mapping(uint => Product) public products;
@@ -34,14 +35,14 @@ contract Marketplace is ERC721 {
         bool purchased
     );
 
-    constructor () public ERC721("ArtToken", "ART") {        
+    constructor () ERC721("ArtToken", "ART") public {
     }
 
     function createProduct(string memory _name, string memory _image, uint _price) public returns (uint){
         // Require a valid name
-        require(bytes(_name).length > 0);
+        require(bytes(_name).length > 0,'Require a valid name');
         // Require a valid price
-        require(_price > 0);
+        require(_price > 0,'Require a valid price');
         // Increment product count
         productCount ++;
         // Create the product
@@ -58,13 +59,13 @@ contract Marketplace is ERC721 {
         // Fetch the owner
         address payable _seller = _product.owner;
         // Make sure the product has a valid id
-        require(_product.id > 0 && _product.id <= productCount);
+        require(_product.id > 0 && _product.id <= productCount,'Make sure the product has a valid id');
         // Require that there is enough Ether in the transaction
-        require(msg.value >= _product.price);
+        require(msg.value >= _product.price, 'Require that there is enough Ether in the transaction');
         // Require that the product has not been purchased already
-        require(!_product.purchased);
+        require(!_product.purchased, 'Require that the product has not been purchased already');
         // Require that the buyer is not the seller
-        require(_seller != msg.sender);
+        require(_seller != msg.sender, 'Require that the buyer is not the seller');
         // Transfer ownership to the buyer
         _product.owner = msg.sender;
         // Mark as purchased
