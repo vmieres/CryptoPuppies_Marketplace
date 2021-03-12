@@ -62,3 +62,11 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 ![](images/CryptoPuppies_Marketplace.png)
 
 This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with cryptocurrency. This application is powered by a smart contract on the blockchain which manages the market place. For example it tracks who owns the "CryptoPuppy" for sale, and it automatically transfers the ownership of it when a transaction is complete.
+
+### **Ropsten Ethereum**
+
+One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. 
+
+### **Sources**
+* [How To Build A Blockchain App ]https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies
+* [Get Ropsten Ethereum]https://medium.com/bitfwd/get-ropsten-ethereum-the-easy-way-f2d6ece21763
