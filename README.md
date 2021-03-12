@@ -46,6 +46,7 @@ The Truffle Framework provides all the following functionalities:
 * Automated Testing
 * Deployment & Migrations
 * Network Management
+* Development Console 
  
 ### **MetaMask** 
 
@@ -54,4 +55,4 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 ![](images/metamask-1.png)
 
 
-
+### **Below we describe our project: CryptoPuppy**
