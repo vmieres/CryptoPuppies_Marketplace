@@ -8,7 +8,7 @@ We are designing a decentralized marketplace which can be further extended to me
 ### **Below we describe development tools used.**
 For the development of smart contracts for decentralized marketplace, we are using Solidity programming language, which is the most popular contract-oriented language for Ethereum. 
 
-In order to compile, deploy, and test our Solidity smart contracts, we used the Remix IDE to test and deploy contracts. This framework is easy to use, and smart contracts can be compiled and deployed using simple commands. Remix is compatible with live blockchain test networks, which can be used for deployment of smart contracts.
+In order to compile, deploy, and test our Solidity smart contracts, we used the Truffle IDE to test and deploy contracts. This framework is easy to use, and smart contracts can be compiled and deployed using simple commands. Truffle is compatible with live blockchain test networks, which can be used for deployment of smart contracts.
 
 For testing purposes, we used Ganache, a personal Ethereum blockchain that was created by Truffle developers. The friendly UI of Ganache made it easy for us to observe the process and transactions during testing.
 
@@ -40,13 +40,33 @@ You can check if you have node already installed by going to your terminal and t
 Now we need to install the [Truffle Framework](https://www.trufflesuite.com/truffle) which will provide us a suite of tools for developing Ethereum smart contracts with Solidity programing language.
 ![](images/truffle.png)
 
+The Truffle Framework provides all the following functionalities: 
+
+* Smart Contract Management
+* Automated Testing
+* Deployment & Migrations
+* Network Management
+* Development Console 
+ 
 ### **MetaMask** 
 
-[MetaMask](https://metamask.io) is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node. 
+Finally we need to install [MetaMask](https://metamask.io) is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node. 
 
 ![](images/metamask-1.png)
 
 
 
 
+### **Below we describe our project: CryptoPuppies Marketplace**
 
+![](images/CryptoPuppies_Marketplace.png)
+
+This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with cryptocurrency. This application is powered by a smart contract on the blockchain which manages the market place. For example it tracks who owns the "CryptoPuppy" for sale, and it automatically transfers the ownership of it when a transaction is complete.
+
+### **Ropsten Ethereum**
+
+One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. Using Ropsten to deploy our application allows for greater interactability among users. 
+
+### **Sources**
+* [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
+* [Get Ropsten Ethereum](https://medium.com/bitfwd/get-ropsten-ethereum-the-easy-way-f2d6ece21763)
