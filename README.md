@@ -55,4 +55,6 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 ![](images/metamask-1.png)
 
 
-### **Below we describe our project: CryptoPuppy**
+### **Below we describe our project: CryptoPuppies Marketplace**
+
+![](images/CryptoPuppies_Marketplace.png)
