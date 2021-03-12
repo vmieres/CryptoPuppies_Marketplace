@@ -40,7 +40,11 @@ You can check if you have node already installed by going to your terminal and t
 Now we need to install the [Truffle Framework](https://www.trufflesuite.com/truffle) which will provide us a suite of tools for developing Ethereum smart contracts with Solidity programing language.
 ![](images/truffle.png)
 
+### **MetaMask** 
 
+MetaMask is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node. 
+
+![](https://columbia.bootcampcontent.com/columbia-bootcamp/cu-nyc-fin-pt-09-2020-u-c/-/raw/master/20-Solidity/Supplemental/Images/metamask-1.png)
 
 
 
