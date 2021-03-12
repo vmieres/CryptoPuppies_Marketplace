@@ -5,7 +5,7 @@ class Main extends Component {
   render() {
     return (
       <div id="content">
-        <h1>Add Product</h1>
+        <h1>Add CryptoPuppy</h1>
         <form onSubmit={(event) => {
           event.preventDefault()
           const name = this.productName.value
@@ -43,7 +43,7 @@ class Main extends Component {
           <button type="submit" className="btn btn-primary">Add Product</button>
         </form>
         <p>&nbsp;</p>
-        <h2>Buy Product</h2>
+        <h2>Buy CryptoPuppy</h2>
         <table className="table">
           <thead>
             <tr>
