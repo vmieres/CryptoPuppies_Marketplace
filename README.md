@@ -55,6 +55,10 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 ![](images/metamask-1.png)
 
 
+
+
 ### **Below we describe our project: CryptoPuppies Marketplace**
 
 ![](images/CryptoPuppies_Marketplace.png)
+
+This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with cryptocurrency.
