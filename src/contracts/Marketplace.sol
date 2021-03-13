@@ -4,7 +4,6 @@ import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 
 contract Marketplace is ERC721 , Ownable{
-    
     uint public productCount = 0;
     mapping(uint => Product) public products;
 
@@ -35,10 +34,10 @@ contract Marketplace is ERC721 , Ownable{
         bool purchased
     );
 
-    constructor () ERC721("CryptoPuppy", "CPUP") public {        
+    constructor () ERC721("CryptoPuppy", "CPUP") public {
     }
 
-    function createProduct(string memory _name, string memory _image, uint _price) public {
+    function createProduct(string memory _name, string memory _image, uint _price, address marketContract) public {
         // Require a valid name
         require(bytes(_name).length > 0,'Require a valid name');
         // Require a valid price
@@ -46,13 +45,17 @@ contract Marketplace is ERC721 , Ownable{
         // Increment product count
         productCount ++;
 
+        _mint(msg.sender, productCount);
+        _setTokenURI(productCount, _image);
+        approve(marketContract, productCount);
+
         // Create the product
         products[productCount] = Product(productCount, _name, _image, _price,  msg.sender, false);
         // Trigger an event
         emit ProductCreated(productCount, _name, _image,_price,  msg.sender, false);
     }
 
-    function purchaseProduct(uint _id) public payable {
+    function purchaseProduct(uint _id , address marketContract) public payable {
         // Fetch the product
         Product memory _product = products[_id];
         // Fetch the owner
@@ -74,7 +77,8 @@ contract Marketplace is ERC721 , Ownable{
         // Pay the seller by sending them Ether
         _seller.transfer(msg.value);
         // Trigger an event
-
+        Marketplace mp = Marketplace(marketContract);
+        mp.safeTransferFrom(_seller, msg.sender, _id);
 
         emit ProductPurchased(productCount, _product.name, _product.image,_product.price, msg.sender, true);
     }

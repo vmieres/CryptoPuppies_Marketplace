@@ -33,7 +33,7 @@ class App extends Component {
     const networkId = await web3.eth.net.getId()
     const networkData = Marketplace.networks[networkId]
     if(networkData) {
-      const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address)
+      const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address)      
       this.setState({ marketplace })
       const productCount = await marketplace.methods.productCount().call()
       this.setState({ productCount })
@@ -65,7 +65,7 @@ class App extends Component {
 
   createProduct(name, image, price) {
     this.setState({ loading: true })
-    this.state.marketplace.methods.createProduct(name, image, price).send({ from: this.state.account })
+    this.state.marketplace.methods.createProduct(name, image, price, this.state.marketplace.address).send({ from: this.state.account })
     .once('transactionHash', (transactionHash) => {
       this.setState({ loading: false })
       window.location.reload();
@@ -74,7 +74,7 @@ class App extends Component {
 
   purchaseProduct(id, price) {
     this.setState({ loading: true })
-    this.state.marketplace.methods.purchaseProduct(id).send({ from: this.state.account, value: price })
+    this.state.marketplace.methods.purchaseProduct(id, this.state.marketplace.address).send({ from: this.state.account, value: price })
     .once('transactionHash', (transactionHash) => {
       this.setState({ loading: false })
       window.location.reload();
