@@ -1,15 +1,15 @@
 {
-  "main.css": "/Blockchain_Marketplace/static/css/main.4550991b.chunk.css",
-  "main.js": "/Blockchain_Marketplace/static/js/main.aa40b681.chunk.js",
-  "main.js.map": "/Blockchain_Marketplace/static/js/main.aa40b681.chunk.js.map",
-  "static/css/1.6504099f.chunk.css": "/Blockchain_Marketplace/static/css/1.6504099f.chunk.css",
-  "static/js/1.4e5dd101.chunk.js": "/Blockchain_Marketplace/static/js/1.4e5dd101.chunk.js",
-  "static/js/1.4e5dd101.chunk.js.map": "/Blockchain_Marketplace/static/js/1.4e5dd101.chunk.js.map",
-  "runtime~main.js": "/Blockchain_Marketplace/static/js/runtime~main.a7064ce4.js",
-  "runtime~main.js.map": "/Blockchain_Marketplace/static/js/runtime~main.a7064ce4.js.map",
-  "static/css/main.4550991b.chunk.css.map": "/Blockchain_Marketplace/static/css/main.4550991b.chunk.css.map",
-  "static/css/1.6504099f.chunk.css.map": "/Blockchain_Marketplace/static/css/1.6504099f.chunk.css.map",
-  "index.html": "/Blockchain_Marketplace/index.html",
-  "precache-manifest.b84025f855cf6aa362a73bfe694d1dd8.js": "/Blockchain_Marketplace/precache-manifest.b84025f855cf6aa362a73bfe694d1dd8.js",
-  "service-worker.js": "/Blockchain_Marketplace/service-worker.js"
+  "main.css": "/Blockchain_Marketplace/build/index.html/static/css/main.4550991b.chunk.css",
+  "main.js": "/Blockchain_Marketplace/build/index.html/static/js/main.850b588d.chunk.js",
+  "main.js.map": "/Blockchain_Marketplace/build/index.html/static/js/main.850b588d.chunk.js.map",
+  "static/css/1.6504099f.chunk.css": "/Blockchain_Marketplace/build/index.html/static/css/1.6504099f.chunk.css",
+  "static/js/1.067d990c.chunk.js": "/Blockchain_Marketplace/build/index.html/static/js/1.067d990c.chunk.js",
+  "static/js/1.067d990c.chunk.js.map": "/Blockchain_Marketplace/build/index.html/static/js/1.067d990c.chunk.js.map",
+  "runtime~main.js": "/Blockchain_Marketplace/build/index.html/static/js/runtime~main.a188249b.js",
+  "runtime~main.js.map": "/Blockchain_Marketplace/build/index.html/static/js/runtime~main.a188249b.js.map",
+  "static/css/main.4550991b.chunk.css.map": "/Blockchain_Marketplace/build/index.html/static/css/main.4550991b.chunk.css.map",
+  "static/css/1.6504099f.chunk.css.map": "/Blockchain_Marketplace/build/index.html/static/css/1.6504099f.chunk.css.map",
+  "index.html": "/Blockchain_Marketplace/build/index.html/index.html",
+  "precache-manifest.a79536da267700bd1da9dd7aafd567fc.js": "/Blockchain_Marketplace/build/index.html/precache-manifest.a79536da267700bd1da9dd7aafd567fc.js",
+  "service-worker.js": "/Blockchain_Marketplace/build/index.html/service-worker.js"
 }
