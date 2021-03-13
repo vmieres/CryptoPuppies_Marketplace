@@ -76,6 +76,17 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 
 This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with Ethereum in the Ropsten network. This application is powered by a smart contract on the blockchain which manages the market place. For example it tracks who owns the "CryptoPuppy" for sale, and it automatically transfers the ownership of it when a transaction is complete.
 
+![](images/first_demo.gif)
+
+![](images/demo_2.gif)
+
+
+
+
+
+In case you are interested on buying some CryptoPuppies here is the contract address ```0x9ae7B1d535e82AF09b75E9ADDEBA7239B52498E4```
+
+
 ### **Ropsten Ethereum**
 
 One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. Using Ropsten to deploy our application allows for greater interactability among users. 
