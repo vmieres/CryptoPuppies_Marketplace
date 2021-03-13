@@ -1,6 +1,6 @@
 # **Blockchain Market**
 ### Demo App
-Click [here](build/index.html) to launch the CryptoPuppies application.
+Click [here](https://harishkumarchandra.github.io/Crypto_Puppy/) to launch the CryptoPuppies application.
 
 ![](https://miro.medium.com/max/4000/1*o9fACvNgYkWGGNqCyYRBMw.png)
 
