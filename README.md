@@ -5,7 +5,9 @@
   <img width="300" height="300" src="https://github.com/vmieres/CryptoPuppies_Marketplace/blob/main/images/puppy_coin.png?raw=true">
 </p>
 
+<p align="center">
 *Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica*
+</p>
 
 ### Demo App
 Click [here](https://harishkumarchandra.github.io/Crypto_Puppy/) to launch the CryptoPuppies application.
