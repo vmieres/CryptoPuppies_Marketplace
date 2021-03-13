@@ -2,7 +2,7 @@
 
 ### Team 6: 
 <p align="center">
-  <img width="300" height="300" src="https://github.com/vmieres/CryptoPuppies_Marketplace/blob/main/images/puppy_coin.png?raw=true">
+  <img width="200" height="200" src="https://github.com/vmieres/CryptoPuppies_Marketplace/blob/main/images/puppy_coin.png?raw=true">
 </p>
 
 <p align="center"> 
