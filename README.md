@@ -1,7 +1,7 @@
 # **Blockchain Market**
 
 ### Team 6: 
-* Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica *
+*Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica*
 
 ### Demo App
 Click [here](https://harishkumarchandra.github.io/Crypto_Puppy/) to launch the CryptoPuppies application.
