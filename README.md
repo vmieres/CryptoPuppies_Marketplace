@@ -1,4 +1,4 @@
-# **Blockchain Market**
+# **CryptoPuppies Marketplace**
 
 ### Team 6: 
 *Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica*
