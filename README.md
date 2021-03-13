@@ -78,7 +78,7 @@ One of our main goals was to be able to run our application on Ropsten Ethereum.
 
 Our inspiration for this project came from our observations of the recent boom in the NFT space. People all over the world are looking to diversify their investment portfolios by offloading their risk exposure to fiat currencies. This trend has been playing out in the cyrptocurrency space as we are already seeing an incredible demand in FTs such as Bitcoin and Ethereum. We believe that this trend will also have an impact on the future of NFTs as more and more people learn about the underlying technology and usages.
 
-![](images/NFT_trends.png)
+![](images/NFT_trends1.png)
 
 ### **Sources**
 * [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
