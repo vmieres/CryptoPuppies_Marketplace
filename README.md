@@ -1,6 +1,7 @@
 # **CryptoPuppies Marketplace**
 
 ### Team 6: 
+![](images/puppy_coin.png)
 *Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica*
 
 ### Demo App
