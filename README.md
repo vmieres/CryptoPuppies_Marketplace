@@ -97,6 +97,12 @@ Our inspiration for this project came from our observations of the recent boom i
 
 ![](images/NFT_trends1.png)
 
+### **Project Challenges**
+
+* Integrating our contracts with the front end interface. We had to perform a lot of training to incorporate the front end Node.js code with our Solidity contracts.
+* Developing the smart contracts that represent our marketplace and crypto puppy tokens. Specifically creating an NFT that represents the purchased intangible asset.
+* Working within the crypto, blockchain network invovled a lot of debugging in order to deploy all of our code completely and accurately.
+
 ### **Sources**
 * [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
 * [Get Ropsten Ethereum](https://medium.com/bitfwd/get-ropsten-ethereum-the-easy-way-f2d6ece21763)
