@@ -35,6 +35,7 @@ class App extends Component {
     if(networkData) {
       const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address)      
       this.setState({ marketplace })
+      this.setState({ address: marketplace.address })
       const productCount = await marketplace.methods.productCount().call()
       this.setState({ productCount })
       // Load products
@@ -56,7 +57,8 @@ class App extends Component {
       account: '',
       productCount: 0,
       products: [],
-      loading: true
+      loading: true,
+      address: ''
     }
 
     this.createProduct = this.createProduct.bind(this)
@@ -84,7 +86,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar account={this.state.account} />
+        <Navbar account={this.state.account} contract={this.state.address}/>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">
