@@ -1,6 +1,6 @@
 # **Blockchain Market**
 ### Demo App
-Click [here](public/index.html) to launch the CryptoPuppies application.
+Click [here](build/index.html) to launch the CryptoPuppies application.
 
 ![](https://miro.medium.com/max/4000/1*o9fACvNgYkWGGNqCyYRBMw.png)
 
