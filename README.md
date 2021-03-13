@@ -6,7 +6,9 @@
 </p>
 
 <p align="center">
-*Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica*
+  
+**Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica** 
+  
 </p>
 
 ### Demo App
