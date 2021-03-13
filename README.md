@@ -89,3 +89,7 @@ Our inspiration for this project came from our observations of the recent boom i
 ### **Sources**
 * [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
 * [Get Ropsten Ethereum](https://medium.com/bitfwd/get-ropsten-ethereum-the-easy-way-f2d6ece21763)
+* [Infura](https://infura.io) 
+* [Ropsten Ethereum Faucet](https://faucet.ropsten.be)
+* [React](https://reactjs.org)
+* [OpenZeppelin](https://openzeppelin.com/contracts/)
