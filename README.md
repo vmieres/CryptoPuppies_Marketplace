@@ -1,4 +1,14 @@
-# **Blockchain Market**
+# **CryptoPuppies Marketplace**
+
+### Team 6: 
+<p align="center">
+  <img width="200" height="200" src="https://github.com/vmieres/CryptoPuppies_Marketplace/blob/main/images/puppy_coin.png?raw=true">
+</p>
+
+<p align="center"> 
+Harish Chandramohan, Matthew Musgrave, Alex Hall, Victor Mieres, Valentina Buritica
+ </p>
+
 ### Demo App
 Click [here](https://harishkumarchandra.github.io/Crypto_Puppy/) to launch the CryptoPuppies application.
 
@@ -64,11 +74,17 @@ Finally we need to install [MetaMask](https://metamask.io) is a web browser exte
 
 ![](images/CryptoPuppies_Marketplace.png)
 
-This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with cryptocurrency. This application is powered by a smart contract on the blockchain which manages the market place. For example it tracks who owns the "CryptoPuppy" for sale, and it automatically transfers the ownership of it when a transaction is complete.
+This is a marketplace that runs on the blockchain. It allows individuals to list "CryptoPuppies" for sale and to purchase them on the website with Ethereum in the Ropsten network. This application is powered by a smart contract on the blockchain which manages the market place. For example it tracks who owns the "CryptoPuppy" for sale, and it automatically transfers the ownership of it when a transaction is complete.
 
 ### **Ropsten Ethereum**
 
 One of our main goals was to be able to run our application on Ropsten Ethereum. Ropsten Ethereum is also known as Ethereum Testnet -- a testing network that runs the same protocol as Ethereum does and is used to testing purposes before deploying on the main network. Using Ropsten to deploy our application allows for greater interactability among users. 
+
+### **Inspiration and Market Trends**
+
+Our inspiration for this project came from our observations of the recent boom in the NFT space. People all over the world are looking to diversify their investment portfolios by offloading their risk exposure to fiat currencies. This trend has been playing out in the cyrptocurrency space as we are already seeing an incredible demand in FTs such as Bitcoin and Ethereum. We believe that this trend will also have an impact on the future of NFTs as more and more people learn about the underlying technology and usages.
+
+![](images/NFT_trends1.png)
 
 ### **Sources**
 * [How To Build A Blockchain App ](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#dependencies)
